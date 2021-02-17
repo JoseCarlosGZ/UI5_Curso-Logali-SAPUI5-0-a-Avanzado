@@ -2,6 +2,7 @@
           xmlns="sap.m" 
           xmlns:mvc="sap.ui.core.mvc"
           xmlns:core="sap.ui.core"
+          xmlns:logali="logaligroup.SAPUI5.control"
           displayBlock="true">
     <Page title="{i18n>detailsPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
         <ObjectHeader title="{northwind>Quantity} x {northwind>ProductName}">
@@ -16,5 +17,6 @@
                 <ObjectAttribute text="{northwind>CustomerName}"/>
             </attributes>
         </ObjectHeader>
+        <logali:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
     </Page>
 </mvc:View>
