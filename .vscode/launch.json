@@ -1,5 +1,11 @@
 {
-  "version": "0.2.0",
+  "inputs": [
+    {
+      "id": "UI5Version",
+      "type": "command",
+      "command": "sap.ux.appGenerator.ui5Version"
+    }
+  ],
   "configurations": [
     {
       "name": "Run invMock-SAPUI5",
@@ -101,5 +107,7 @@
       "envFile": "${workspaceFolder}/Invoices/SAPUI5/.env4",
       "preLaunchTask": "Build Invoices"
     }
-  ]
+  ],
+  "compounds": [],
+  "version": "0.2.0"
 }
