@@ -56,6 +56,5 @@ sap.ui.define([
                 }
                 return this._sContentDensityClass;
             }
-            
         });
     });
